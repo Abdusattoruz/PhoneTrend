@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneTrend - Telefon aksessuarlari</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .btn-primary {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+        h1, h2, h3 {
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+        p {
+            font-weight: 400;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-purple-800 to-purple-600 text-white py-5 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl md:text-4xl font-bold">PhoneTrend</h1>
+            <nav>
+                <ul class="flex space-x-6 md:space-x-8">
+                    <li><a href="#home" class="hover:text-purple-200 text-lg transition-colors duration-200">Bosh sahifa</a></li>
+                    <li><a href="#products" class="hover:text-purple-200 text-lg transition-colors duration-200">Mahsulotlar</a></li>
+                    <li><a href="#contact" class="hover:text-purple-200 text-lg transition-colors duration-200">Bog‘lanish</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero h-[500px] flex items-center justify-center text-white">
+        <div class="text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Telefoningiz uchun eng zamonaviy aksessuarlar</h2>
+            <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">Sifatli va o‘ziga xos mahsulotlar bilan telefoningizni yangi darajaga ko‘taring!</p>
+            <a href="#products" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-lg btn-primary">Mahsulotlarni ko‘rish</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Bizning mahsulotlar</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="simsiz quloqchinlar.jpg" alt="Simsiz quloqchinlar" class="product-img">
+                    <!-- Agar mahalliy rasm ishlamasa, quyidagi Unsplash rasmini ishlatish mumkin: -->
+                    <!-- <img src="https://images.unsplash.com/photo-1610438235354-a6ae5523395c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Simsiz quloqchinlar" class="product-img"> -->
+                    <div class="card-content">
+                        <h3 class="text-xl font-semibold text-gray-800">Simsiz quloqchinlar</h3>
+                        <p class="text-gray-600 mt-2">Kristal toza ovoz va qulay dizayn bilan har kuni musiqadan zavqlaning.</p>
+                        <a href="https://example.com/earphones" target="_blank" class="block mt-4 bg-purple-600 hover:bg-purple-700 text-white text-center py-2 rounded-lg btn-primary">Batafsil</a>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="obloshka telefon.jpg" alt="Telefon g'ilofi" class="product-img">
+                    <!-- Agar mahalliy rasm ishlamasa: -->
+                    <!-- <img src="https://images.unsplash.com/photo-1605464315542-6d74f7a4d9b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Telefon g'ilofi" class="product-img"> -->
+                    <div class="card-content">
+                        <h3 class="text-xl font-semibold text-gray-800">Telefon g‘ilofi</h3>
+                        <p class="text-gray-600 mt-2">Stil va himoyani birlashtirgan zamonaviy g‘iloflar.</p>
+                        <a href="https://example.com/cases" target="_blank" class="block mt-4 bg-purple-600 hover:bg-purple-700 text-white text-center py-2 rounded-lg btn-primary">Batafsil</a>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="kabel.jpg" alt="Zaryadlovchi kabel" class="product-img">
+                    <!-- Agar mahalliy rasm ishlamasa: -->
+                    <!-- <img src="https://images.unsplash.com/photo-1620371350502-999113081807?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Zaryadlovchi kabel" class="product-img"> -->
+                    <div class="card-content">
+                        <h3 class="text-xl font-semibold text-gray-800">Zaryadlovchi kabel</h3>
+                        <p class="text-gray-600 mt-2">Tez zaryadlash va uzoq muddat xizmat ko‘rsatadigan kabellar.</p>
+                        <a href="https://example.com/cables" target="_blank" class="block mt-4 bg-purple-600 hover:bg-purple-700 text-white text-center py-2 rounded-lg btn-primary">Batafsil</a>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="himoya oynasi.jpg" alt="Himoya oynasi" class="product-img">
+                    <!-- Agar mahalliy rasm ishlamasa: -->
+                    <!-- <img src="https://images.unsplash.com/photo-1614027673457-50c1822f4c6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Himoya oynasi" class="product-img"> -->
+                    <div class="card-content">
+                        <h3 class="text-xl font-semibold text-gray-800">Himoya oynasi</h3>
+                        <p class="text-gray-600 mt-2">Ekraningizni chizish va yorilishdan himoya qiling.</p>
+                        <a href="https://example.com/screen-protectors" target="_blank" class="block mt-4 bg-purple-600 hover:bg-purple-700 text-white text-center py-2 rounded-lg btn-primary">Batafsil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Biz bilan bog‘laning</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Savollaringiz bo‘lsa yoki buyurtma berishni xohlasangiz, biz bilan bog‘laning. Biz sizga eng yaxshi xizmatni taqdim etamiz!</p>
+            <p class="text-lg mb-4">Telefon: <a href="tel:+998901234567" class="hover:text-purple-300 transition-colors duration-200">+998 99 470 70 78</a></p>
+            <p class="text-lg">Email: <a href="mailto:info@phonetrend.uz" class="hover:text-purple-300 transition-colors duration-200">Abdusattor@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-purple-800 to-purple-600 text-white py-6 text-center">
+        <p class="text-lg">© 2025 PhoneTrend. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+    </script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
